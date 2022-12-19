@@ -8,7 +8,8 @@
 - Абсолютне позиціонування (position: absolute)
 - Фіксоване позиціонування (position: fixed)
 - Липке позиціонування (position: sticky)
-- Властивість z-index Властивість overflow
+- Властивість z-index
+- Властивість overflow
 
 ---
 
