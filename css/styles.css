@@ -931,3 +931,9 @@ img {
 
   cursor: pointer;
 }
+
+/* form */
+label {
+  display: block;
+  color: #f7f7f7;
+}
