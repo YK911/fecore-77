@@ -1,6 +1,6 @@
-# fe-core-72
+# fe-core-77
 
-Заняття 9:
+План заняття 9:
 
 - Властивість position: static
 - Відносне позиціонування (position: relative)
