@@ -479,6 +479,7 @@
                     type="text"
                     minlength="3"
                     placeholder="Antony Black"
+                    required
                   />
                   <span class="booking-form-label">Name*</span>
                 </label>
@@ -487,14 +488,17 @@
                     class="booking-form-input"
                     name="user_phone"
                     type="tel"
-                    placeholder="+38 (099) 123 45 67"
+                    minlength="12"
+                    maxlength="12"
+                    placeholder="38 099 123 45 67"
+                    required
                   />
                   <span class="booking-form-label">Phone*</span>
                 </label>
               </div>
-              <label class="booking-form-field">
+              <label class="booking-form-message">
                 <textarea
-                  class="booking-form-message"
+                  class="booking-form-textarea"
                   name="user_message"
                   rows="5"
                   placeholder="Type your message..."
@@ -570,7 +574,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="12" height="12">
@@ -582,24 +586,31 @@
             >Leave your contacts and we will call you back</strong
           >
           <div class="registration-form-group" role="group">
-            <div class="registration-form-field">
-              <spam class="registration-form-label">Name</spam>
-              <input class="registration-form-input" type="text" name="user_name" />
+            <label class="registration-form-field">
+              <span class="registration-form-label">Name</span>
+              <input
+                class="registration-form-input"
+                type="text"
+                name="user_name"
+                required
+                minlength="3"
+                placeholder="&nbsp;"
+              />
               <svg class="registration-form-icon" width="20" height="20">
                 <use href="./images/icons.svg#user-pic"></use>
               </svg>
-              <svg class="registration-form-icon" width="20" height="20">
-                <use href="./images/icons.svg#success"></use>
-                <use href="./images/icons.svg#warning"></use>
+              <svg class="registration-form-alert" width="20" height="20">
+                <use class="registration-form-success" href="./images/icons.svg#success"></use>
+                <use class="registration-form-warning" href="./images/icons.svg#warning"></use>
               </svg>
-            </div>
+            </label>
             <label class="registration-form-field">
               <span class="registration-form-label">Phone</span>
               <input class="registration-form-input" type="phone" name="user_phone" />
               <svg class="registration-form-icon" width="20" height="20">
                 <use href="./images/icons.svg#user-mobile"></use>
               </svg>
-              <svg class="registration-form-icon" width="20" height="20">
+              <svg class="registration-form-alert" width="20" height="20">
                 <use href="./images/icons.svg#success"></use>
                 <use href="./images/icons.svg#warning"></use>
               </svg>
@@ -610,7 +621,7 @@
               <svg class="registration-form-icon" width="20" height="20">
                 <use href="./images/icons.svg#user-mail"></use>
               </svg>
-              <svg class="registration-form-icon" width="20" height="20">
+              <svg class="registration-form-alert" width="20" height="20">
                 <use href="./images/icons.svg#success"></use>
                 <use href="./images/icons.svg#warning"></use>
               </svg>
@@ -628,12 +639,16 @@
           </div>
           <label class="registration-form-agreement">
             <input class="registration-form-checkbox" type="checkbox" name="user_agreement" />
+            <svg class="registration-form-check" width="20" height="20">
+              <use class="check" href="./images/icons.svg#icon-check"></use>
+              <use class="uncheck" href="./images/icons.svg#icon-uncheck"></use>
+            </svg>
             <span class="registration-form-text">
               I accept the terms and conditions of the
               <a class="registration-form-link" href="">Privacy Policy</a>
             </span>
           </label>
-          <button type="submit">Submit</button>
+          <button class="btn registration-form-btn" type="submit">Submit</button>
         </form>
       </div>
     </div>
