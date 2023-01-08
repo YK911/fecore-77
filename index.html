@@ -606,28 +606,40 @@
             </label>
             <label class="registration-form-field">
               <span class="registration-form-label">Phone</span>
-              <input class="registration-form-input" type="phone" name="user_phone" />
+              <input
+                class="registration-form-input"
+                type="phone"
+                name="user_phone"
+                required
+                placeholder="&nbsp;"
+              />
               <svg class="registration-form-icon" width="20" height="20">
                 <use href="./images/icons.svg#user-mobile"></use>
               </svg>
               <svg class="registration-form-alert" width="20" height="20">
-                <use href="./images/icons.svg#success"></use>
-                <use href="./images/icons.svg#warning"></use>
+                <use class="registration-form-success" href="./images/icons.svg#success"></use>
+                <use class="registration-form-warning" href="./images/icons.svg#warning"></use>
               </svg>
             </label>
             <label class="registration-form-field">
               <span class="registration-form-label">Email</span>
-              <input class="registration-form-input" type="email" name="user_email" />
+              <input
+                class="registration-form-input"
+                type="email"
+                name="user_email"
+                required
+                placeholder="&nbsp;"
+              />
               <svg class="registration-form-icon" width="20" height="20">
                 <use href="./images/icons.svg#user-mail"></use>
               </svg>
               <svg class="registration-form-alert" width="20" height="20">
-                <use href="./images/icons.svg#success"></use>
-                <use href="./images/icons.svg#warning"></use>
+                <use class="registration-form-success" href="./images/icons.svg#success"></use>
+                <use class="registration-form-warning" href="./images/icons.svg#warning"></use>
               </svg>
             </label>
 
-            <label>
+            <label class="registration-form-field">
               <span class="registration-form-label">Comment</span>
               <textarea
                 class="registration-form-message"
