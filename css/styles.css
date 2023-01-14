@@ -421,8 +421,8 @@ img {
 }
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
-  screen and (max-width: 767.98px) and(min-resolution: 192dpi),
-  screen and (max-width: 767.98px) and(min-resolution: 2dppx) {
+  screen and (max-width: 767.98px) and (min-resolution: 192dpi),
+  screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
       url(../images/hero/slider-img_mob@2x.jpg);
@@ -490,8 +490,8 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-right-side {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
       url(../images/hero/slider-img_tab@2x.jpg);
@@ -504,8 +504,8 @@ img {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-right-side {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
       url(../images/hero/slider-img_desk@2x.jpg);
@@ -703,8 +703,8 @@ img {
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  screen and (min-width: 481px) and (min-resolution: 192dpi),
+  screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .price {
     background-image: url(../images/price/bg-img_tab@2x.png);
   }
@@ -716,8 +716,8 @@ img {
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  screen and (min-width: 769px) and (min-resolution: 192dpi),
+  screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .price {
     background-image: url(../images/price/bg-img_desk@2x.png);
   }
